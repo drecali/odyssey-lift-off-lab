@@ -47,6 +47,10 @@ const typeDefs = gql`
     title: String!
     "The module's length in minutes"
     length: Int
+    "The module's video URL, for video-based modules"
+    videoUrl: String
+    "The Module's text-based description, can me in .md format. For videos, it will be the enriched transcript"
+    content: String
   }
 `;
 
